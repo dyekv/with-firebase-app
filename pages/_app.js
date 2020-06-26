@@ -1,10 +1,7 @@
-import UserProvider from '../context/userContext'
+import '../styles/global.css'
 
-// Custom App to wrap it with context provider
-export default function App({ Component, pageProps }) {
-  return (
-    <UserProvider>
-      <Component {...pageProps} />
-    </UserProvider>
-  )
+const App = ({ Component, pageProps }) => {
+    return <Component {...pageProps} />
 }
+
+export default App
